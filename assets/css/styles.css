@@ -21,16 +21,40 @@ body {
 a {
   text-decoration: none;
 }
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 
+.btn {
+  --height: 60px;
+
+  display: inline-block;
+  min-width: 205px;
+  border-radius: 99px;
+  background: #2e80ce;
+  color: #fff;
+  height: var(--height);
+  line-height: var(--height);
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 1px solid #2e80ce;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 /* Header */
 .header {
   min-height: 100vh;
   background: var(--header-bg);
+  padding-top: 30px;
 }
 
 .logo {
@@ -77,4 +101,50 @@ a {
 .logo__branch--small {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* Header top */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+li.navbar__item {
+  justify-content: space-around;
+}
+
+.action__login,
+.navbar__link {
+  padding: 4px 21px;
+  color: #c9d2da;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  position: relative;
+  content: "";
+  left: -8px;
+  top: -2px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.action__signup {
+  --height: 44px;
+  min-width: 104px;
 }
