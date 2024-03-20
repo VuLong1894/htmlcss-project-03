@@ -22,6 +22,13 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -140,6 +147,7 @@ a {
 }
 
 .logo__branch {
+  font-family: Sora, sans-serif;
   display: block;
   font-size: 1.8em;
   font-weight: 400;
@@ -710,4 +718,124 @@ li.navbar__item {
   max-width: 617px;
   margin: 18px auto 38px;
   font-size: 1.6rem;
+}
+
+/* Footer */
+.footer {
+  font-family: "Open Sans", sans-serif;
+  background: #10375c;
+  padding-top: 100px;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  max-width: 336px;
+  margin-top: 20px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__list {
+  margin-bottom: 28px;
+}
+
+.footer__link {
+  display: inline-block;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+
+.footer-form {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  color: #fff;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.footer-form__submit {
+  --height: 46px;
+
+  font-size: 1.4rem;
+  min-width: 108px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+
+.footer__copyright {
+  padding: 28px 0 42px;
+  border-top: 1px solid #aab3ba;
+}
+
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
 }
